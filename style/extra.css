@@ -1,0 +1,141 @@
+
+
+ .heading{
+    width: 100vw;
+    height: 20vw;
+    background: url('../asset/heading-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .heading a:hover{
+     text-decoration: underline;
+ }
+ .heading h1{
+    font-size: 3rem;
+ }
+ .heading p{
+    font-size: 1.3rem;
+ }
+
+ .cat-heading{
+    padding: 1.5rem 4rem;
+    border-bottom: var(--border);
+    box-shadow: var(--box-shadow);
+ }
+
+ .cat-heading h3{
+    font-size: 2rem;
+ }
+ .cat-heading span{
+    float: right;
+     font-size: 1.2rem;
+     color: rgb(59, 53, 53);
+ }
+ .cat-heading span:hover{
+    color: blue;
+    font-size: 1.3rem;
+ }
+
+ .catagories{
+    margin: 1rem;
+ }
+
+ .catagories .box{
+    margin: 1rem;
+    padding: 1rem 0rem;
+    border: 1px solid  rgba(99, 90, 90, 0.1);
+    box-shadow: var(--box-shadow);
+ }
+ .catagories .box h1{
+    padding: .5rem;
+ }
+
+ .catagories img:hover{
+     transform: scale(0.8);
+ }
+ 
+
+ /* about section  */
+
+   .about{
+    margin: 1rem;
+   }
+
+   .about .about-box{
+    gap: 1rem;
+   }
+
+   .about .about-box img {
+    width: 40rem;
+    height: 30rem;
+   }
+   .about .about-box h1 {
+      font-size: 3rem;
+    }
+    .about .about-box h3 {
+        font-size: 2rem;
+        margin: .3rem;
+        color: rgb(120, 192, 12);
+   }
+   .about .about-box p {
+      font-size: 1.1rem;
+      margin: .5rem 1rem;
+   }
+
+   .gallery{
+    padding: 3rem;
+    background-color: burlywood;
+   }
+   .gallery .gallery-box {
+       position: relative;
+       overflow: hidden;
+   }
+
+   .gallery .gallery-box img{
+       width: 20rem;
+       height: 20rem;
+       margin: 2rem;
+   }
+   .gallery .gallery-box img:hover{
+      transform: scale(1.2);
+   }
+
+
+   .gallery .gallery-box .icons{
+    width: 100%;
+    height: 100%;
+    top: -150%;
+    left: 0;
+    position: absolute;
+    background-color: rgba(82, 245, 96, 0.596);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .gallery .gallery-box:hover .icons{
+    top: 0;
+     }
+
+   .gallery .gallery-box .icons img{
+    margin: .5rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+   }
+
+
+   @media screen and (max-width:1000px) {
+        .about .flex{
+            flex-direction: column;
+        }
+
+        .gallery{
+            padding: .5rem;
+        }
+   }
